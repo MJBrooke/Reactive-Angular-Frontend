@@ -1,0 +1,7 @@
+<!-- The async pipe here subscribes to the tweets observable and updates the component when new tweets are added -->
+<div *ngFor="let tweet of tweets | async">
+  <p>ID: {{tweet.id}}</p>
+  <p>Date of Creation: {{tweet.dateOfCreation}}</p>
+  <p>Content: {{tweet.content}}</p>
+  <hr>
+</div>
